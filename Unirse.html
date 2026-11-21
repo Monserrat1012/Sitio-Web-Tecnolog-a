@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Únete a EcoSfera</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#dbe5d5;
+    color:#2f3d2f;
+}
+
+.main-container{
+    width:95%;
+    max-width:1400px;
+    margin:20px auto;
+    background:#f5f1e8;
+    border-radius:35px;
+    overflow:hidden;
+}
+
+/* HERO */
+
+.hero{
+    padding:70px 40px;
+    text-align:center;
+    background:#f5f1e8;
+}
+
+.badge{
+    display:inline-block;
+    background:#DCE6D5;
+    color:#4E6A4F;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#2f472f;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#617061;
+    font-size:1.1rem;
+}
+
+/* TARJETAS */
+
+.section{
+    width:90%;
+    margin:auto;
+    padding-bottom:30px;
+}
+
+.card{
+    background:white;
+    border-radius:30px;
+    padding:35px;
+    margin-bottom:25px;
+    border:1px solid #E8E3D8;
+}
+
+.card h2{
+    text-align:center;
+    color:#4E6A4F;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#5b645b;
+}
+
+/* BENEFICIOS */
+
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.beneficio{
+    background:#DCE6D5;
+    padding:25px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.beneficio h3{
+    color:#4E6A4F;
+    margin-bottom:10px;
+}
+
+/* EQUIPO */
+
+.equipo{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.integrante{
+    background:#BCCCB6;
+    border-radius:25px;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.integrante img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid white;
+}
+
+.integrante h3{
+    color:white;
+}
+
+.integrante p{
+    color:white;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    display:grid;
+    gap:15px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #d8d8d8;
+    border-radius:15px;
+    font-size:1rem;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+button{
+    border:none;
+    background:#D98A41;
+    color:white;
+    padding:16px;
+    border-radius:40px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+footer{
+    background:#BCCCB6;
+    text-align:center;
+    padding:25px;
+    color:#2f3d2f;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .integrante{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="main-container">
+
+<section class="hero">
+
+<span class="badge">
+Forma parte del cambio
+</span>
+
+<h1>Únete a EcoSfera</h1>
+
+<p>
+Estamos construyendo una comunidad comprometida con la sostenibilidad,
+la innovación y el impacto positivo para el planeta.
+</p>
+
+</section>
+
+<div class="section">
+
+<div class="card">
+
+<h2>¿Por qué unirte?</h2>
+
+<div class="beneficios">
+
+<div class="beneficio">
+<h3>Impacto Ambiental</h3>
+<p>Participa en iniciativas que contribuyen al cuidado del planeta.</p>
+</div>
+
+<div class="beneficio">
+<h3>Innovación</h3>
+<p>Colabora en proyectos sostenibles con enfoque creativo.</p>
+</div>
+
+<div class="beneficio">
+<h3>Trabajo en Equipo</h3>
+<p>Comparte ideas y aprende con personas comprometidas.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<div class="card">
+
+<h2>Solicitud de Participación</h2>
+
+<form class="formulario">
+
+<input type="text" placeholder="Nombre completo">
+
+<input type="email" placeholder="Correo electrónico">
+
+<input type="text" placeholder="Área de interés">
+
+<textarea placeholder="Cuéntanos por qué quieres unirte a EcoSfera"></textarea>
+
+<button type="submit">
+Enviar Solicitud
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+EcoSfera | Construyendo un futuro más verde
+</footer>
+
+</div>
+
+</body>
+</html>
